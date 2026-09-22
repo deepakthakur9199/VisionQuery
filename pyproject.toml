@@ -1,0 +1,54 @@
+[project]
+name = "ragmultimodal"
+version = "0.2.0"
+requires-python = ">=3.11"
+dependencies = [
+    "dotenv>=0.9.9",
+    "fastapi>=0.128.0",
+    "google-genai>=1.59.0",
+    "google-generativeai>=0.8.6",
+    "langchain>=1.2.6",
+    "langchain-community>=0.4.1",
+    "langchain-google-genai>=4.2.0",
+    "langchain-huggingface>=0.1.0",
+    "langchain-qdrant>=0.2.0",
+    "langchain-text-splitters>=0.3.0",
+    "qdrant-client>=1.12.0",
+    "pymupdf>=1.25.0",
+    "tiktoken>=0.8.0",
+    "sentence-transformers>=3.0.0",
+    "uvicorn>=0.40.0",
+    # Multimodal dependencies
+    "torch>=2.0.0",
+    "transformers>=4.40.0",
+    "Pillow>=10.0.0",
+    "FlagEmbedding>=1.2.0",
+    "pdf2image>=1.17.0",
+    "unstructured>=0.14.0",
+    "unstructured[pdf]>=0.14.0",
+    "python-multipart>=0.0.9",
+    "aiofiles>=23.0.0",
+]
+
+[project.optional-dependencies]
+gpu = [
+    "torch>=2.0.0",
+    "torchvision>=0.15.0",
+]
+dev = [
+    "pytest>=8.0.0",
+    "black>=24.0.0",
+    "ruff>=0.3.0",
+]
+
+[tool.uv]
+python-downloads = "automatic"
+
+[[tool.uv.index]]
+name = "pytorch-cu128"
+url = "https://download.pytorch.org/whl/cu128"
+explicit = true
+
+[tool.uv.sources]
+torch = [{ index = "pytorch-cu128" }]
+torchvision = [{ index = "pytorch-cu128" }]
