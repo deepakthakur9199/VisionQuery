@@ -259,7 +259,7 @@ def extract_context_from_path(file_path: Path) -> Dict[str, str]:
     
     # Product categories
     category_keywords = {
-        'fruit': ['strawberry', 'mango', 'pineapple', 'lime', 'lemon', 'lulo', 'avocado', 'fruit', 'fresa', 'piña', 'limon', 'aguacate'],
+        'fruit': ['strawberry', 'mango', 'pineapple', 'lime', 'lemon', 'lulo', 'avocado', 'fruit'],
         'product': ['wallet', 'bottle', 'cup', 'pencil', 'tumbler', 'refill', 'scissors', 'paper', 'books', 'cardholder'],
         'catalog': ['catalog', 'overview', 'earnings', 'financial', 'profits', 'summary', 'report']
     }

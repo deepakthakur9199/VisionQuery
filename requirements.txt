@@ -6,7 +6,7 @@ accelerate==1.13.0
     #   peft
 aiofiles==25.1.0
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   unstructured-client
 aiohappyeyeballs==2.6.1
     # via aiohttp
@@ -93,11 +93,11 @@ dill==0.4.1
 distro==1.9.0
     # via google-genai
 dotenv==0.9.9
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 emoji==2.15.0
     # via unstructured
 fastapi==0.136.1
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 filelock==3.29.0
     # via
     #   datasets
@@ -109,7 +109,7 @@ filetype==1.2.0
     #   langchain-google-genai
     #   unstructured
 flagembedding==1.4.0
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 frozenlist==1.8.0
     # via
     #   aiohttp
@@ -144,10 +144,10 @@ google-cloud-vision==3.13.0
     # via unstructured
 google-genai==1.74.0
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   langchain-google-genai
 google-generativeai==0.8.6
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 googleapis-common-protos==1.74.0
     # via
     #   google-api-core
@@ -230,11 +230,11 @@ jsonpatch==1.33
 jsonpointer==3.1.1
     # via jsonpatch
 langchain==1.2.17
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 langchain-classic==1.0.5
     # via langchain-community
 langchain-community==0.4.1
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 langchain-core==1.3.2
     # via
     #   langchain
@@ -248,16 +248,16 @@ langchain-core==1.3.2
     #   langgraph-checkpoint
     #   langgraph-prebuilt
 langchain-google-genai==4.2.2
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 langchain-huggingface==1.2.2
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 langchain-protocol==0.0.15
     # via langchain-core
 langchain-qdrant==1.1.0
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 langchain-text-splitters==1.1.2
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   langchain-classic
 langdetect==1.0.9
     # via unstructured
@@ -359,7 +359,7 @@ pandas==3.0.2
     # via datasets
 pdf2image==1.17.0
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   unstructured
 pdfminer-six==20260107
     # via unstructured
@@ -371,7 +371,7 @@ pikepdf==10.5.1
     # via unstructured
 pillow==12.2.0
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   pdf2image
     #   pi-heif
     #   pikepdf
@@ -442,7 +442,7 @@ pydantic-settings==2.14.0
 pygments==2.20.0
     # via rich
 pymupdf==1.27.2.3
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 pyparsing==3.3.2
     # via httplib2
 pypdf==6.10.2
@@ -462,7 +462,7 @@ python-iso639==2026.4.20
 python-magic==0.4.27
     # via unstructured
 python-multipart==0.0.27
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 python-oxmsg==0.0.2
     # via unstructured
 pywin32==311
@@ -480,7 +480,7 @@ pyyaml==6.0.3
     #   transformers
 qdrant-client==1.17.1
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   langchain-qdrant
 rapidfuzz==3.14.5
     # via unstructured
@@ -523,7 +523,7 @@ scipy==1.17.1
     #   sentence-transformers
 sentence-transformers==5.4.1
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   flagembedding
 sentencepiece==0.2.1
     # via flagembedding
@@ -574,14 +574,14 @@ thinc==8.3.13
 threadpoolctl==3.6.0
     # via scikit-learn
 tiktoken==0.12.0
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 tokenizers==0.22.2
     # via
     #   langchain-huggingface
     #   transformers
 torch==2.11.0+cu128
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   accelerate
     #   flagembedding
     #   peft
@@ -599,7 +599,7 @@ tqdm==4.67.3
     #   unstructured
 transformers==5.7.0
     # via
-    #   ragmultimodal (pyproject.toml)
+    #   visionquery (pyproject.toml)
     #   flagembedding
     #   peft
     #   sentence-transformers
@@ -645,7 +645,7 @@ tzdata==2026.2
 unlzw3==0.2.3
     # via ir-datasets
 unstructured==0.22.26
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 unstructured-client==0.43.2
     # via unstructured
 unstructured-pytesseract==0.3.15
@@ -661,7 +661,7 @@ uuid-utils==0.14.1
     #   langchain-core
     #   langsmith
 uvicorn==0.46.0
-    # via ragmultimodal (pyproject.toml)
+    # via visionquery (pyproject.toml)
 warc3-wet==0.2.5
     # via ir-datasets
 warc3-wet-clueweb09==0.2.5

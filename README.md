@@ -106,8 +106,8 @@ Using [uv](https://docs.astral.sh/uv/) package manager (recommended):
 
 ```bash
 # Clone the repository
-git clone https://github.com/deepakthakur9199/visionquery2.git
-cd visionquery2
+git clone https://github.com/deepakthakur9199/VisionQuery.git
+cd VisionQuery
 
 # Sync virtual environment & base dependencies
 uv sync
