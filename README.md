@@ -1,11 +1,10 @@
 # VisionQuery - FastAPI Multimodal RAG with LangChain & Qdrant
 
 ![Python](https://img.shields.io/badge/Python-3.11+-blue.svg)
-![License](https://img.shields.io/badge/License-MIT-green.svg)
 ![FastAPI](https://img.shields.io/badge/FastAPI-0.128+-009688.svg)
 ![Qdrant](https://img.shields.io/badge/Qdrant-VectorDB-red.svg)
 
-**VisionQuery** is a high-performance Multimodal Retrieval-Augmented Generation (RAG) system built with FastAPI, LangChain, Qdrant vector database, SigLIP 2 vision embeddings, BGE-M3 text embeddings, and Gemini 2.5 Flash.
+**VisionQuery** is a high-performance Multimodal Retrieval-Augmented Generation (RAG) platform built with FastAPI, LangChain, Qdrant vector database, SigLIP 2 vision embeddings, BGE-M3 text embeddings, and Gemini 2.5 Flash.
 
 It supports processing and querying across PDFs, high-resolution images, charts/diagrams, and plain text files with WebSocket streaming and Reciprocal Rank Fusion (RRF) hybrid retrieval.
 
@@ -43,6 +42,8 @@ Qdrant Collection: text_chunks  Qdrant Collection: image_embeddings
 User Query → FastAPI → Query Encoder → Retriever → Context + Images → Gemini 2.5 Flash → Response
 ```
 
+---
+
 ## Model Stack
 
 | Component | Model Name | Dimensions | Primary Purpose |
@@ -51,6 +52,8 @@ User Query → FastAPI → Query Encoder → Retriever → Context + Images → 
 | **Vision Embeddings** | SigLIP 2 (`google/siglip2-so400m-patch14-384`) | 1152 | Visual & image feature embedding |
 | **Image Captioning** | BLIP (`Salesforce/blip-image-captioning-base`) | - | Automatic visual description generation |
 | **Multimodal LLM** | Gemini 2.5 Flash | - | Multimodal answer generation |
+
+---
 
 ## Key Features
 
@@ -160,7 +163,7 @@ The FastAPI backend server will start at `http://localhost:8000`.
 ## Project Structure
 
 ```
-visionquery/
+VisionQuery/
 ├── main_multimodal.py           # FastAPI application server & WebSocket endpoints
 ├── multimodal_processor.py      # Document processor for PDFs, images, and text
 ├── image_embeddings.py          # SigLIP 2 vision embeddings & BLIP captioning
@@ -170,8 +173,8 @@ visionquery/
 ├── cache_caption_embeddings.py  # Utility script to cache caption vectors
 ├── rebuild_image_collection.py  # Utility script to rebuild Qdrant image collection
 ├── filesRAG/                    # Knowledge base documents and images directory
-│   ├── brandstore/              # Sample brandstore documents & products
-│   └── fresh-green-brand/       # Sample organic produce documents & products
+│   ├── brandstore/              # BrandStore product catalog & documents
+│   └── fresh-green-brand/       # Organic produce catalog & financial reports
 ├── .env                         # Environment variable configurations
 └── pyproject.toml               # Project metadata and dependencies
 ```
@@ -186,6 +189,8 @@ visionquery/
 
 ---
 
-## License
+## Author
 
-This project is open-source and licensed under the **MIT License**.
+**Deepak Thakur**
+- **GitHub**: [@deepakthakur9199](https://github.com/deepakthakur9199)
+- **Repository**: [VisionQuery](https://github.com/deepakthakur9199/VisionQuery)
